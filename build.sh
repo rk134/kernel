@@ -24,9 +24,16 @@ MAKE_PARAMS="O=out ARCH=arm64 CC=clang \
 
 export PATH="$TC_DIR/bin:$PATH"
 
-if [[ $1 = "-r" || $1 = "--regen" ]]; then
+if [[ $1 = "-r" || $1 = "--save-regen" ]]; then
 	make $MAKE_PARAMS $DEFCONFIG savedefconfig
 	cp out/defconfig arch/arm64/configs/$DEFCONFIG
+	echo -e "\nSuccessfully regenerated defconfig at $DEFCONFIG"
+	exit
+fi
+
+if [[ $1 = "-r" || $1 = "--regen" ]]; then
+	make $MAKE_PARAMS $DEFCONFIG
+	cp out/.config arch/arm64/configs/$DEFCONFIG
 	echo -e "\nSuccessfully regenerated defconfig at $DEFCONFIG"
 	exit
 fi

@@ -77,6 +77,3 @@ source "drivers/soc/oplus/system/theia/Kconfig"
 #terry.zhong@OPTI.Kernel.Stability, 2020/09/7, enable oplus misc feature
 source "drivers/soc/oplus/system/misc/Kconfig"
 #endif /* OPLUS_FEATURE_MISC */
-#ifdef OPLUS_FEATURE_RT_INFO
-source "drivers/soc/oplus/system/rt_info/Kconfig"
-#endif

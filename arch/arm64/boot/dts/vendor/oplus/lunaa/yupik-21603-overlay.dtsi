@@ -94,7 +94,11 @@
 	};
 	
 	/* add pingrp for touchscreen */
+<<<<<<< HEAD
 	pmx_ts_int_active_oplus {
+=======
+	pmx_ts_int_active_oppo {
+>>>>>>> 42b0913f5cdd (arm64: dts: vendor: Device tree for lunaa (GT Master) and ice (Q3s))
 		ts_int_active: ts_int_active {
 			mux {
 				pins = "gpio81";
@@ -110,7 +114,11 @@
 		};
 	};
 
+<<<<<<< HEAD
 	pmx_ts_int_suspend_oplus {
+=======
+	pmx_ts_int_suspend_oppo {
+>>>>>>> 42b0913f5cdd (arm64: dts: vendor: Device tree for lunaa (GT Master) and ice (Q3s))
 		ts_int_suspend1: ts_int_suspend1 {
 			mux {
 				pins = "gpio81";
@@ -127,7 +135,11 @@
 		};
 	};
 
+<<<<<<< HEAD
 	pmx_ts_reset_active_oplus {
+=======
+	pmx_ts_reset_active_oppo {
+>>>>>>> 42b0913f5cdd (arm64: dts: vendor: Device tree for lunaa (GT Master) and ice (Q3s))
 		ts_reset_active: ts_reset_active {
 			mux {
 				pins = "gpio105";
@@ -143,7 +155,11 @@
 		};
 	};
 
+<<<<<<< HEAD
 	pmx_ts_reset_suspend_oplus {
+=======
+	pmx_ts_reset_suspend_oppo {
+>>>>>>> 42b0913f5cdd (arm64: dts: vendor: Device tree for lunaa (GT Master) and ice (Q3s))
 		ts_reset_suspend1: ts_reset_suspend1 {
 			mux {
 				pins = "gpio105";
@@ -762,7 +778,10 @@
 	nvmem-names = "hap_cfg_sdam";
 	nvmem = <&pmk8350_sdam_46>;
 	qcom,pbs-client = <&pm8350b_pbs2>;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42b0913f5cdd (arm64: dts: vendor: Device tree for lunaa (GT Master) and ice (Q3s))
 	qcom,vmax-mv = <1300>;
 	qcom,lra-period-us = <5880>;
 	status = "disabled";
@@ -918,4 +937,7 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42b0913f5cdd (arm64: dts: vendor: Device tree for lunaa (GT Master) and ice (Q3s))

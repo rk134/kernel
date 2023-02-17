@@ -2252,7 +2252,7 @@ static const struct snd_kcontrol_new wcd937x_snd_controls[] = {
 const char * const wcd937x_die_crk_det_en_text[] = {"0x80", "0xC0"};
 const u8 wcd937x_det_en[] = {0x80, 0xC0};
 
-const char * const wcd937x_diewcd937x__crk_det_int1_text[] = {"0xC2", "0x82", "0x42", "0x02"};
+const char * const wcd937x_die_crk_det_int1_text[] = {"0xC2", "0x82", "0x42", "0x02"};
 const u8 wcd937x_det_int1[] = {0xC2, 0x82, 0x42, 0x02};
 
 const char * const wcd937x_die_crk_det_out_text[] = {"0x00"};

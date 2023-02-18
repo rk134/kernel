@@ -6,9 +6,9 @@
 
 SECONDS=0 # builtin bash timer
 ZIPNAME="topaz-kernel-lunaa-$(date '+%Y%m%d-%H%M').zip"
-TC_DIR="/home/rahul/kernel/work/tc/azure"
-GCC_64_DIR="/home/rahul/kernel/work/tc/aarch64-linux-android-4.9"
-GCC_32_DIR="/home/rahul/kernel/work/tc/arm-linux-androideabi-4.9"
+TC_DIR="/home/rahul/kernel-manifest/kernel/msm-5.4/work/tc/azure"
+GCC_64_DIR="/home/rahul/kernel-manifest/kernel/msm-5.4/work/tc/aarch64-linux-android-4.9"
+GCC_32_DIR="/home/rahul/kernel-manifest/kernel/msm-5.4/work/tc/arm-linux-androideabi-4.9"
 export PATH="$TC_DIR/bin:$PATH"
 AK3_DIR="AnyKernel3"
 DEFCONFIG="vendor/lahaina-qgki_defconfig"
@@ -56,7 +56,7 @@ fi
 
 mkdir -p out
 make $MAKE_PARAMS $DEFCONFIG
-ARCH=arm64 CC=clang CLANG_TRIPLE=aarch64-linux-gnu- LLVM=1 CROSS_COMPILE=$GCC_64_DIR/bin/aarch64-linux-android- CROSS_COMPILE_ARM32=$GCC_32_DIR/bin/arm-linux-androideabi- scripts/kconfig/merge_config.sh -O out arch/arm64/configs/vendor/lahaina-qgki_defconfig arch/arm64/configs/vendor/oplus_QGKI.config
+ARCH=arm64 CC=clang CLANG_TRIPLE=aarch64-linux-gnu- LLVM=1 CROSS_COMPILE=$GCC_64_DIR/bin/aarch64-linux-android- CROSS_COMPILE_ARM32=$GCC_32_DIR/bin/arm-linux-androideabi- scripts/kconfig/merge_config.sh -O out arch/arm64/configs/vendor/lahaina-qgki_defconfig arch/arm64/configs/vendor/oplus_QGKI.config arch/arm64/configs/vendor/lahaina_QGKI.config arch/arm64/configs/vendor/lineage_yupik.config
 
 echo -e "\nStarting compilation...\n"
 make -j$(nproc --all) $MAKE_PARAMS || exit $?

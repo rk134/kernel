@@ -6,9 +6,9 @@
 
 SECONDS=0 # builtin bash timer
 ZIPNAME="topaz-kernel-lunaa-$(date '+%Y%m%d-%H%M').zip"
-TC_DIR="/home/rahul/kernel-manifest/kernel/msm-5.4/work/tc/azure"
-GCC_64_DIR="/home/rahul/kernel-manifest/kernel/msm-5.4/work/tc/aarch64-linux-android-4.9"
-GCC_32_DIR="/home/rahul/kernel-manifest/kernel/msm-5.4/work/tc/arm-linux-androideabi-4.9"
+TC_DIR="/home/rk134/aospa/kernel/kernel/work/tc/azure"
+GCC_64_DIR="/home/rk134/aospa/kernel/kernel/work/tc/aarch64-linux-android-4.9"
+GCC_32_DIR="/home/rk134/aospa/kernel/kernel/work/tc/arm-linux-androideabi-4.9"
 export PATH="$TC_DIR/bin:$PATH"
 AK3_DIR="AnyKernel3"
 DEFCONFIG="vendor/lahaina-qgki_defconfig"
